@@ -1,0 +1,10 @@
+{
+  // Force Windows-1251 for all files, avoids VS Code auto-guessing CP1252
+  "files.encoding": "windows1251",
+  "files.autoGuessEncoding": false,
+
+  // Keep explicit language override for XML as an extra guard
+  "[xml]": {
+    "files.encoding": "windows1251"
+  }
+}
