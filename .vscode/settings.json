@@ -1,10 +1,12 @@
 {
-  // Force Windows-1251 for all files, avoids VS Code auto-guessing CP1252
-  "files.encoding": "windows1251",
-  "files.autoGuessEncoding": false,
+  // Default encoding for non-XML files.
+  // Auto-detection is enabled for general project files.
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": true,
 
-  // Keep explicit language override for XML as an extra guard
+  // XML documents in this project are exchanged in CP1251.
   "[xml]": {
-    "files.encoding": "windows1251"
+    "files.encoding": "windows1251",
+    "files.autoGuessEncoding": false
   }
 }
